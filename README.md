@@ -50,28 +50,18 @@ Projeto desenvolvido com fins de aprendizado e prática de integração entre fr
 
 ---
 
-## 📊 Arquitetura da Aplicação
-
-```mermaid
-graph LR
-A[React - Front-end] -->|Requisições HTTP (Axios)| B[Laravel - API]
-B --> C[(Banco de Dados)]
-```
-
----
-
 ## 📂 Estrutura do Projeto
 
 ```
 API/
 │
-├── backend/        # API Laravel
+├── eduteka-course-apirest-backend/app/         # API Laravel
 │   ├── app/
 │   ├── routes/
 │   ├── database/
 │   └── ...
 │
-└── frontend/       # Aplicação React
+└── eduteka-course-apirest-frontend/       # Aplicação React
     ├── src/
     ├── components/
     ├── services/
@@ -85,7 +75,7 @@ API/
 ### 🔹 Back-end (Laravel)
 
 ```bash
-cd backend
+cd eduteka-course-apirest-backend/app/ 
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -98,7 +88,7 @@ php artisan serve
 ### 🔹 Front-end (React)
 
 ```bash
-cd frontend
+cd eduteka-course-apirest-frontend/  
 npm install
 npm start
 ```
